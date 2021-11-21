@@ -1,6 +1,31 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br/><br/>
+Components should be placed on `src/components` and components stylesheet should have the same name as component and should be placed on `src/stylesheets`.<br/><br/>
+
+We use `react-router-dom` 6 version and `Routes` to specific pages is located in `app/src/index.js`: <br/>
+
+```
+ReactDOM.render(
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>,
+  document.getElementById('root')
+);
+```
+
+Link example:
+
+```
+<Link to="/">Home</Link> |{" "}
+<Link to="about">About</Link>
+```
+
+All API references is located on `src/api` directory and every file with getting JSON data from specific resource e.g. `Users` is placed in `UsersApi.js` so file schema is `ResourceApi.js`
 
 ## Available Scripts
 
