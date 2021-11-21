@@ -27,6 +27,8 @@ Link example:
 
 All API references is located on `src/api` directory and every file with getting JSON data from specific resource e.g. `Users` is placed in `UsersApi.js` so file schema is `ResourceApi.js`
 
+We use data from json-server from this: <a>https://github.com/arrke/cinemarestjson </a>
+
 ## Available Scripts
 
 In the project directory, you can run:
