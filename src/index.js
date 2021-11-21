@@ -10,10 +10,9 @@ import { RegisterComponent } from './components/RegisterComponent';
 
 ReactDOM.render(
   <BrowserRouter>
-  <NavComponent/>
   <Routes>
     <Route path="/" element={<App />}>
-      <Route index element={<NavComponent />} />
+      <Route index element={<NavComponent user={true}/>} />
       <Route path="/sign-in" element={<LoginComponent/>} />
       <Route path="/sign-up" element={<RegisterComponent/>} />
     </Route>
