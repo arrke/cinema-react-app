@@ -1,0 +1,28 @@
+.LoginComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  label {
+    font-size: 130%;
+    margin-top: 1em;
+  }
+  input {
+    margin-top: 1em;
+    font-size: 130%;
+  }
+  button {
+    width: 14vw;
+    height: 3em;
+  }
+  a {
+    position: relative;
+    top: 1em;
+    left: -5em;
+  }
+  span {
+    color: red;
+    font-size: 90%;
+  }
+}

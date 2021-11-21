@@ -1,10 +1,15 @@
 
 import '../stylesheets/App.css';
-import {Home} from './Home.js'
+import {Routes, Route} from 'react-router-dom'
+import { LoginComponent } from './LoginComponent';
+import { RegisterComponent } from './RegisterComponent';
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <Routes>
+        <Route path="/sign-in" element={<LoginComponent/>} />
+        <Route path="/sign-up" element={<RegisterComponent/>} />
+      </Routes>
     </div>
   );
 }
