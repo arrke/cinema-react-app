@@ -56,4 +56,9 @@
       }
     }
   }
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1.4em;
+  }
 }

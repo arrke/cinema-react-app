@@ -10,7 +10,9 @@ export function NavComponent({user, signOut}) {
     <div className="NavComponent">
       <Link to="/" className="NavComponent__home-link"><h1 className="NavComponent__home">Cinema</h1></Link>
       <nav>
-        <Link className="NavComponent__elem" to="/about">About</Link>
+        <Link className="NavComponent__elem" to="/movies">Movies</Link>
+        <Link className="NavComponent__elem" to="/branches">Branches</Link>
+        <Link className="NavComponent__elem" to="/repertoire">Repertoire</Link>
       </nav>
       {user.email === undefined?
       <Link className="NavComponent__elem NavComponent__elem-login" to="/sign-in">Login</Link>:
