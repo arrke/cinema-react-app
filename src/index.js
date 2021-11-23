@@ -1,23 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
-import './stylesheets/index.css';
+import './stylesheets/index.scss';
 import App from './components/App';
-import {Home} from './components/Home.js'
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { NavComponent } from './components/NavComponent';
+import { LoginComponent } from './components/LoginComponent';
+import { RegisterComponent } from './components/RegisterComponent';
 
 ReactDOM.render(
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}>
-        <Route index element={<Home />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>,
+  <Routes>
+    <Route path="/" element={<App />}>
+      <Route index element={<NavComponent user={true}/>} />
+      <Route path="/sign-in" element={<LoginComponent/>} />
+      <Route path="/sign-up" element={<RegisterComponent/>} />
+    </Route>
+  </Routes>
+</BrowserRouter>,
   document.getElementById('root')
 );
 

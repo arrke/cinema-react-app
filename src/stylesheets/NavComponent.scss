@@ -1,0 +1,64 @@
+.NavComponent {
+  $color-1: #10002b;
+  $color-2: #240046;
+  $color-3: #3c096c;
+  $color-4: #5a189a;
+  $color-5: #8b28e2;
+  $color-6: #9d4edd;
+  $color-7: #c77dff;
+  $color-8: #f7e9ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  a {
+    text-decoration: none;
+    color: $color-1;
+  }
+  &__home {
+    background: linear-gradient(#ad5389, #3c1053);
+    padding: 0.2em 0.4em;
+    width: 4.5em;
+    text-align: center;
+    font-size: 300%;
+    color: white;
+    border-radius: 10%;
+    transition: all 0.5s ease-out;
+    border: 1px solid $color-8;
+    &:hover {
+      cursor: pointer;
+      color: $color-8;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+      transform: translateY(-3px);
+    }
+  }
+  &__elem {
+    display: block;
+    padding: 1em 1em;
+    font-family: "Times", cursive;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+      transform: translateY(-3px);
+    }
+    &-login {
+      background-color: $color-5;
+      color: $color-8 !important;
+      &:hover {
+        background-color: $color-2;
+      }
+    }
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1.4em;
+  }
+}
